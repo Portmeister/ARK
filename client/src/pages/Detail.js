@@ -5,7 +5,7 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 
 function Detail() {
-  const [book, setBook] = useState({})
+  const [ark, setArk] = useState({})
 
   const { id } = useParams();
   
@@ -14,8 +14,8 @@ function Detail() {
   // The book id for this route can be accessed using the useParams hook
   // from react-router-dom.
   useEffect(() => {
-    API.getBook(id)
-      .then(res => setBook(res.data))
+    API.getArk(id)
+      .then(res => setArk(res.data))
       .catch(err => console.log(err));
   }, [])
 
@@ -25,7 +25,10 @@ function Detail() {
           <Col size="md-12">
             <Jumbotron>
               <h1>
-                {book.title} by {book.author}
+                {ark.userFirst} {ark.userLast}
+                {ark.userPhone}
+                {ark.userEmail}
+                {ark.userLocation}
               </h1>
             </Jumbotron>
           </Col>
@@ -33,16 +36,17 @@ function Detail() {
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Synopsis</h1>
+              <h1>Description</h1>
               <p>
-                {book.synopsis}
+                {ark.serviceSynopsis}
+                {ark.providerSynopsis}
               </p>
             </article>
           </Col>
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/">← Back to Authors</Link>
+            <Link to="/">← Back to ARKs</Link>
           </Col>
         </Row>
       </Container>
