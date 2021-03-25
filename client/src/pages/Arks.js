@@ -62,44 +62,43 @@ function Arks() {
               <Input
                 onChange={handleInputChange}
                 name="userFirst"
-                placeholder="First Name (required)"
+                placeholder="First Name"
               />
               <Input
                 onChange={handleInputChange}
                 name="userLast"
-                placeholder="Last Name (required)"
+                placeholder="Last Name"
               />
               <Input
                 onChange={handleInputChange}
                 name="userPhone"
-                placeholder="Phone Number (required)"
+                placeholder="Phone Number"
               />
               <Input
                 onChange={handleInputChange}
                 name="userEmail"
-                placeholder="Email (required)"
+                placeholder="Email"
+                type="email"
               />
               <Input
                 onChange={handleInputChange}
                 name="userLocation"
-                placeholder="City, State (required)"
+                placeholder="City, State"
               />
               <TextArea
                 onChange={handleInputChange}
                 name="serviceSynopsis"
-                placeholder="Needed ARK (Optional)"
+                placeholder="How Can Others Help You?"
               />
               <TextArea
                 onChange={handleInputChange}
                 name="providerSynopsis"
-                placeholder="How you can help (Optional)"
+                placeholder="How Can You Help Others?"
               />
               <FormBtn
                 disabled={!(formObject.userFirst && formObject.userLast && formObject.userPhone && formObject.userEmail && formObject.userLocation)}
                 onClick={handleFormSubmit}
-              >
-                Submit ARK
-              </FormBtn>
+              />
             </form>
           </Col>
           <Col size="md-6 sm-12">
@@ -112,10 +111,7 @@ function Arks() {
                   <ListItem key={ark._id}>
                     <Link to={"/arks/" + ark._id}>
                       <strong>
-                        {ark.userFirst} {ark.userLast}
-                        {ark.userPhone}
-                        {ark.userEmail}
-                        {ark.userLocation}
+                        {ark.userFirst} {ark.userLast} / {ark.userLocation}
                       </strong>
                     </Link>
                     <DeleteBtn onClick={() => deleteArk(ark._id)} />

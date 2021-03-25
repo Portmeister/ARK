@@ -15,7 +15,7 @@ function SaveBtn(props) {
       {...props} 
       role="button" 
       tabIndex="0">
-      ✗
+      Save
     </Button>
   );
 }
