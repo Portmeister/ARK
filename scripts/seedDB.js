@@ -12,7 +12,7 @@ const arkSeed = [
   {
     userFirst: "John",
     userLast: "Carter",
-    userPhone: 432-689-0425,
+    userPhone: 4326890425,
     userEmail: "johncarter@gmail.com",
     userLocation: "Midland, TX",
     serviceSynopsis: "Need trash taken out on Monday & Thursday",
@@ -23,7 +23,7 @@ const arkSeed = [
   {
     userFirst: "Chelsea",
     userLast: "Abalos",
-    userPhone: 432-687-3313,
+    userPhone: 4326873313,
     userEmail: "chelseaabalos@gmail.com",
     userLocation: "Midland, TX",
     serviceSynopsis: "Need a ride to the grocery store on Friday",
@@ -34,7 +34,7 @@ const arkSeed = [
   {
     userFirst: "Charles",
     userLast: "Boyd",
-    userPhone: 512-888-4314,
+    userPhone: 5128884314,
     userEmail: "charlesboyd@gmail.com",
     userLocation: "Austin, TX",
     serviceSynopsis: "Need help changing air filters in my home this month",
@@ -45,7 +45,7 @@ const arkSeed = [
   {
     userFirst: "Tyler",
     userLast: "Jones",
-    userPhone: 512-444-6615,
+    userPhone: 5124446615,
     userEmail: "tylerjones@gmail.com",
     userLocation: "Austin, TX",
     serviceSynopsis: "",
@@ -56,7 +56,7 @@ const arkSeed = [
   {
     userFirst: "Ruben",
     userLast: "Carrasco",
-    userPhone: 432-418-8888,
+    userPhone: 4324188888,
     userEmail: "rubencarrasco@gmail.com",
     userLocation: "Midland, TX",
     serviceSynopsis: "",
@@ -67,7 +67,7 @@ const arkSeed = [
   {
     userFirst: "Stacy",
     userLast: "Fern",
-    userPhone: 512-999-8226,
+    userPhone: 5129998226,
     userEmail: "stacyfern@gmail.com",
     userLocation: "Austin, TX",
     serviceSynopsis: "Need help fixing some sprinkler heads in my front yard",
@@ -78,7 +78,7 @@ const arkSeed = [
   {
     userFirst: "Sally",
     userLast: "Grotto",
-    userPhone: 432-772-4246,
+    userPhone: 4327724246,
     userEmail: "sallygrotto@gmail.com",
     userLocation: "Midland, TX",
     serviceSynopsis: "Need help getting to and from the Dr.'s office Tuesday",
@@ -89,7 +89,7 @@ const arkSeed = [
   {
     userFirst: "Julie",
     userLast: "Young",
-    userPhone: 432-889-4499,
+    userPhone: 4328894499,
     userEmail: "julieyoung@gmail.com",
     userLocation: "Midland, TX",
     serviceSynopsis: "",
@@ -100,7 +100,7 @@ const arkSeed = [
   {
     userFirst: "Kelly",
     userLast: "Burns",
-    userPhone: 817-222-2246,
+    userPhone: 8172222246,
     userEmail: "kellyburns@gmail.com",
     userLocation: "Dallas, TX",
     serviceSynopsis: "Need help getting to and from the grocery store ASAP",
@@ -111,7 +111,7 @@ const arkSeed = [
   {
     userFirst: "Bobby",
     userLast: "Bell",
-    userPhone: 972-849-4191,
+    userPhone: 9728494191,
     userEmail: "bobbybell@gmail.com",
     userLocation: "Arlington, TX",
     serviceSynopsis: "",
