@@ -24,23 +24,21 @@ function Detail() {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <h1>
-                {ark.userFirst} {ark.userLast}
-                {ark.userPhone}
-                {ark.userEmail}
-                {ark.userLocation}
-              </h1>
+              <h1>{ark.userFirst} {ark.userLast}</h1>
+              <h4>Telephone: {ark.userPhone}</h4>
+              <h4>Email: {ark.userEmail}</h4>
+              <h4>Location: {ark.userLocation}</h4>
             </Jumbotron>
           </Col>
         </Row>
         <Row>
           <Col size="md-10 md-offset-1">
             <article>
-              <h1>Description</h1>
-              <p>
-                {ark.serviceSynopsis}
-                {ark.providerSynopsis}
-              </p>
+              <h1>ARK Description</h1>
+              <p>{ark.serviceSynopsis}</p>
+              <br />
+              <h1>Provider Abilities</h1>
+              <p>{ark.providerSynopsis}</p>
             </article>
           </Col>
         </Row>
