@@ -1,17 +1,17 @@
 import React from "react";
 import Button from "@material-ui/core/Button";
-import DeleteIcon from "@material-ui/icons/Delete";
+import SaveIcon from "@material-ui/icons/Save";
 
 // The ...props means, spread all of the passed props onto this element
 // That way we don't have to define them all individually
-function DeleteBtn(props) {
+function SaveBtn(props) {
   return (
     <Button 
-      startIcon={<DeleteIcon />}
+      startIcon={<SaveIcon />}
       size="small"
       variant="contained"
-      color="secondary"
-      className="delete-btn" 
+      color="primary"
+      className="save-btn" 
       {...props} 
       role="button" 
       tabIndex="0">
@@ -20,4 +20,4 @@ function DeleteBtn(props) {
   );
 }
 
-export default DeleteBtn;
+export default SaveBtn;
