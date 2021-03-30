@@ -30,7 +30,7 @@ function Nav() {
               <MenuIcon />
             </IconButton>
             <Typography variant="h4" className={classes.title}>
-              <a className="navbar-brand" href="/">
+              <a className="navbar-brand" href="/arks">
                 ARK List
               </a>
             </Typography>

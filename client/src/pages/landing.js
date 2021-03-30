@@ -72,13 +72,12 @@ export default function Album() {
              About Us
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              SLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tempor, odio eu vehicula mollis, felis odio commodo ligula, ac condimentum nisl dolor quis sem. Sed tellus sapien, congue ac augue eu, euismod varius tellus. Sed mattis quam vel nulla bibendum, blandit pretium nulla ali&apos;quam. Vivamus lectus dolor, varius eu placerat non, euismod feugiat sapient
-              entirely.
+              Act of Random Kindness (ARK) is a grass root movement that aims to bridge individuals in need withcommunities
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="secondary">
+                  <Button href="/arks" variant="contained" color="secondary">
                     Visit
                   </Button>
                 </Grid>
