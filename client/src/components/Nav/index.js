@@ -1,4 +1,5 @@
 import React from 'react';
+import "./style.css";
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -30,8 +31,8 @@ function Nav() {
               <MenuIcon />
             </IconButton>
             <Typography variant="h4" className={classes.title}>
-              <a className="navbar-brand" href="/arks">
-                ARK List
+              <a className="navbar-brand" href="/">
+                ARK
               </a>
             </Typography>
             <Button color="inherit">Login</Button>

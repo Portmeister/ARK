@@ -10,22 +10,22 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
+import Image from 'material-ui-image'
 
-document.body.style = 'background: #83878D;';
+document.body.style = 'background: gray;';
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material.io/resources/color/#!/?view.left=0&view.right=1&secondary.color=c3c4c2&primary.color=b3a7bf">
-        Your Website
+        ARK
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
   );
 }
-
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -59,56 +59,56 @@ const useStyles = makeStyles((theme) => ({
 const cards = [1];
 
 export default function Album() {
+
   const classes = useStyles();
 
   return (
     <React.Fragment>
       <CssBaseline />
       <main>
-        {/* Hero unit */}
+      <Container  className={classes.cardGrid} maxWidth="xl">
+         {/* Hero unit */}
+          <Grid justify='center' container>
+            {cards.map((card) => (
+              <Grid item key={card} xs={8} sm={8} md={8}>
+                <Card  className={classes.card}>
+                  <CardMedia 
+                    className={classes.cardMedia}
+                    image="https://source.unsplash.com/1600x900/?charity"
+                    title="Image title"
+                  />
+                  <CardContent className={classes.cardContent}>
+                  </CardContent>
+                   {/* End hero unit */}
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
              About Us
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Act of Random Kindness (ARK) is a grass root movement that aims to bridge individuals in need withcommunities
+            Acts of Random Kindness (ARK) is a grass root movement that aims to bridge those in need with individuals or groups willing and able to provide help to better local, national and global communities. Join in the movement today to help make a difference!
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button href="/arks" variant="contained" color="secondary">
-                    Visit
+                <Button href="/arks" variant="contained" color="primary">
+                    Enter
                   </Button>
                 </Grid>
               </Grid>
             </div>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="xl">
-          {/* End hero unit */}
-          <Grid container spacing={6}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={12} md={12}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/1600x900/?volunteer"
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                  </CardContent>
-                  
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          ONE ARK CAN CHANGE THE WORLD!!!
         </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
           Thanks For Visiting!
