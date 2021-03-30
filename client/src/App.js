@@ -6,7 +6,7 @@ import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { blue, red } from "@material-ui/core/colors"
+import { grey, blue } from "@material-ui/core/colors";
 import "fontsource-roboto";
 import Typography from "@material-ui/core/Typography";
 
@@ -16,7 +16,7 @@ const theme = createMuiTheme({
       main: blue[500],
     },
     secondary: {
-      main: red[500],
+      main: grey[500],
     }
   }
 })

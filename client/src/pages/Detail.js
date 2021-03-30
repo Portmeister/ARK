@@ -44,7 +44,7 @@ function Detail() {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/">← Back to ARKs</Link>
+            <Link to="/arks">← Back to ARKs</Link>
           </Col>
         </Row>
       </Container>
