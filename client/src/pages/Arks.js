@@ -59,6 +59,7 @@ function Arks() {
               <h1>What ARKs Might You Need?</h1>
             </Jumbotron>
             <form>
+              <h3>Complete Form & Submit</h3>
               <Input
                 onChange={handleInputChange}
                 name="userFirst"
@@ -90,11 +91,6 @@ function Arks() {
                 name="serviceSynopsis"
                 placeholder="How Can Others Help You?"
               />
-              <TextArea
-                onChange={handleInputChange}
-                name="providerSynopsis"
-                placeholder="How Can You Help Others?"
-              />
               <FormBtn
                 disabled={!(formObject.userFirst && formObject.userLast && formObject.userPhone && formObject.userEmail && formObject.userLocation)}
                 onClick={handleFormSubmit}
@@ -111,7 +107,7 @@ function Arks() {
                   <ListItem key={ark._id}>
                     <Link to={"/arks/" + ark._id}>
                       <strong>
-                        {ark.userFirst} {ark.userLast} / {ark.userLocation}
+                        {ark.serviceSynopsis} / {ark.userLocation}
                       </strong>
                     </Link>
                     <DeleteBtn onClick={() => deleteArk(ark._id)} />

@@ -12,13 +12,13 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import Image from 'material-ui-image'
 
-document.body.style = 'background: gray;';
+document.body.style = 'background: lightgray;';
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://material.io/resources/color/#!/?view.left=0&view.right=1&secondary.color=c3c4c2&primary.color=b3a7bf">
+      <Link color="inherit" href="/">
         ARK
       </Link>{' '}
       {new Date().getFullYear()}
