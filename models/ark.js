@@ -8,7 +8,6 @@ const arkSchema = new Schema({
   userEmail: { type: String, required: true },
   userLocation: { type: String, required: true },
   serviceSynopsis: String,
-  providerSynopsis: String,
   completed: { type: Boolean, default: false },
   date: { type: Date, default: Date.now }
 });

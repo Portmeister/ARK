@@ -35,16 +35,14 @@ function Detail() {
           <Col size="md-10 md-offset-1">
             <article>
               <h1>ARK Description</h1>
-              <p>{ark.serviceSynopsis}</p>
+              <h4>{ark.serviceSynopsis}</h4>
               <br />
-              <h1>Provider Abilities</h1>
-              <p>{ark.providerSynopsis}</p>
             </article>
           </Col>
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/arks">← Back to ARKs</Link>
+            <Link style={{fontSize: 20}} to="/arks">← Back to ARKs</Link>
           </Col>
         </Row>
       </Container>
