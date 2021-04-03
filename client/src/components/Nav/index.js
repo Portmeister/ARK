@@ -35,7 +35,7 @@ function Nav() {
                 ARK
               </a>
             </Typography>
-            <Button color="inherit">Login</Button>
+            <Button color="inherit" href="/provider">Login</Button>
           </Toolbar>
         </AppBar>
       </div>

@@ -9,6 +9,7 @@ import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { grey, blue } from "@material-ui/core/colors";
 import "fontsource-roboto";
 import Typography from "@material-ui/core/Typography";
+import Provider from "./pages/Provider";
 
 const theme = createMuiTheme({
   palette: {
@@ -40,6 +41,9 @@ function App() {
             </Route>
             <Route exact path="/arks/:id">
               <Detail />
+            </Route>
+            <Route exact path="/provider">
+              <Provider />
             </Route>
             <Route>
               <NoMatch />
