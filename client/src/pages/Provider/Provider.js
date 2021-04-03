@@ -1,7 +1,7 @@
 import React from "react";
-import Nav from "../components/Nav";
-import Preloader from "../components/Preloader/Preloader";
-import Timer from "../components/Countdown/Timer";
+import Nav from "../../components/Nav";
+import Preloader from "../../components/Preloader/Preloader";
+import Timer from "../../components/Countdown/Timer";
 import "./styles.css";
 
 function Provider() {
