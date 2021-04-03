@@ -89,18 +89,35 @@ export default function Album() {
         </Container>
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-             About Us
-              </Typography>
+          <motion.div
+              initial={{ x: "38.5%", y: -400 }}
+              animate={{ y: -10 }}
+              transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
+              component="h1"
+              variant="h2"
+              color="textPrimary"
+              gutterBottom
+            >
+              <h1>About Us</h1>
+            </motion.div>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
             Acts of Random Kindness (ARK) is a grass root movement that aims to bridge those in need with individuals or groups willing and able to provide help to better local, national and global communities. Join in the movement today to help make a difference!
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                <Button href="/arks" variant="contained" color="primary">
-                    Enter
-                  </Button>
+                <motion.button
+                      whileHover={{
+                        backgroundColor: "#87CFEB",
+                        color: "blue",
+                        scale: 2.2,
+                        textShadow: "0px 0px 8px #87CFEB",
+                        boxShadow: "0px 0px 8px #87CFEB",
+                        borderRadius: "40%",
+                      }}
+                    >
+                      Go Back
+                    </motion.button>
                 </Grid>
               </Grid>
             </div>
@@ -119,5 +136,5 @@ export default function Album() {
       </footer>
       {/* End footer */}
     </React.Fragment>
-  );
+  );z
 }
