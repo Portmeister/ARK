@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import TextareaAutosize from "@material-ui/core/TextareaAutosize";
 import TextField from "@material-ui/core/TextField";
 import SaveBtn from "../SaveBtn";
 
