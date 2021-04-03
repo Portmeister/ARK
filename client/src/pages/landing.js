@@ -5,12 +5,14 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
+import { motion } from "framer-motion"
+
 import "fontsource-roboto";
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
-import Image from 'material-ui-image'
+
 
 document.body.style = 'background: lightgray;';
 
@@ -89,7 +91,7 @@ export default function Album() {
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
              About Us
-            </Typography>
+              </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
             Acts of Random Kindness (ARK) is a grass root movement that aims to bridge those in need with individuals or groups willing and able to provide help to better local, national and global communities. Join in the movement today to help make a difference!
             </Typography>
