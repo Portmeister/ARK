@@ -1,15 +1,15 @@
 import React from "react";
-import Album from "./pages/landing";
-import Arks from "./pages/Arks";
-import Detail from "./pages/Detail";
-import NoMatch from "./pages/NoMatch";
+import Album from "./pages/AboutUs/AboutUs";
+import Arks from "./pages/Form/Form";
+import Detail from "./pages/ArkCard/ArkCard";
+import NoMatch from "./pages/NoMatch/NoMatch";
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { grey, blue } from "@material-ui/core/colors";
 import "fontsource-roboto";
 import Typography from "@material-ui/core/Typography";
-import Provider from "./pages/Provider";
+import Provider from "./pages/Provider/Provider";
 
 const theme = createMuiTheme({
   palette: {
