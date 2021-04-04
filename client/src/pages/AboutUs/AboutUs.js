@@ -30,8 +30,13 @@ function Copyright() {
 }
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    minHeight: '100vh',
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/charity.jpg'})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+},
   heroContent: {
-    backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6, 0, 6),
   },
   heroButtons: {
@@ -53,21 +58,20 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
-  },
+    color: 'white',
+  }
 }));
 
 const cards = [1];
 
-export default function Album() {
+export default function About() {
 
   const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <CssBaseline />
+    <div className={classes.root}>
       <main>
+      <CssBaseline />
       <Container  className={classes.cardGrid} maxWidth="xl">
          {/* Hero unit */}
           <Grid justify='center' container>
@@ -118,6 +122,6 @@ export default function Album() {
         <Copyright />
       </footer>
       {/* End footer */}
-    </React.Fragment>
+    </div>
   );
 }

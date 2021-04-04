@@ -15,6 +15,7 @@ function Arks() {
   function handleFormSubmit(event) {
     event.preventDefault();
     if (formObject.userFirst && formObject.userLast && formObject.userPhone && formObject.userEmail && formObject.userLocation) {
+      console.log("about to save an ark");
       API.saveArk({
         userFirst: formObject.userFirst,
         userLast: formObject.userLast,
@@ -22,7 +23,6 @@ function Arks() {
         userEmail: formObject.userEmail,
         userLocation: formObject.userLocation,
         serviceSynopsis: formObject.serviceSynopsis,
-        providerSynopsis: formObject.providerSynopsis
       })
         .catch(err => console.log(err));
     }
@@ -30,10 +30,8 @@ function Arks() {
 
     return (
       <Container fluid>
-        <Row>
-          <Col size="md-6">
             <Jumbotron>
-              <h1>What ARKs Might You Need?</h1>
+              <h1>What ARK Might You Need?</h1>
             </Jumbotron>
             <form>
               <h3>Complete Form & Submit</h3>
@@ -73,8 +71,6 @@ function Arks() {
                 onClick={handleFormSubmit}
               />
             </form>
-          </Col>
-        </Row>
       </Container>
     );
   }

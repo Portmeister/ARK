@@ -12,5 +12,5 @@ export function List({ children }) {
 }
 
 export function ListItem({ children }) {
-  return <li className="list-group-item">{children}</li>;
+  return <li style={{ opacity: 0.8 }} className="list-group-item">{children}</li>;
 }
