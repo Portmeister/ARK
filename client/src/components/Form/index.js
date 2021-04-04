@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import TextareaAutosize from "@material-ui/core/TextareaAutosize";
 import TextField from "@material-ui/core/TextField";
 import SaveBtn from "../SaveBtn";
 
@@ -13,6 +12,9 @@ export function Input(props) {
         variant="outlined"
         color="primary"
         label="Required"
+        style={{
+          opacity: 0.8,
+        }}
         className="form-control" 
         {...props} 
       />
@@ -27,6 +29,9 @@ export function TextArea(props) {
         variant="outlined"
         color="primary"
         label="Optional"
+        style={{
+          opacity: 0.8,
+        }}
         className="form-control" 
         {...props} 
       />

@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from "react";
+import API from "../../utils/API";
+import Jumbotron from "../../components/Jumbotron";
 import DeleteBtn from "../../components/DeleteBtn";
+import { Col, Row, Container } from "../../components/Grid";
 import { Link } from "react-router-dom";
 import { List, ListItem } from "../../components/List";
 
-function DisplayArks() {
-    const [arks, setArks] = useState([])
+function Landing() {
 
+    const [arks, setArks] = useState([])
+    
     useEffect(() => {
         loadArks()
     }, [])
-
+    
     function loadArks() {
         API.getArks()
         .then(res => 
@@ -17,15 +21,15 @@ function DisplayArks() {
         )
         .catch(err => console.log(err));
     };
-
+    
     function deleteArk(id) {
         API.deleteArk(id)
         .then(res => loadArks())
         .catch(err => console.log(err));
     }
-
+    
     return (
-        <Col size="md-6 sm-12">
+        <div>
             <Jumbotron>
             <h1>Current ARKs Needing Providers</h1>
             </Jumbotron>
@@ -45,8 +49,9 @@ function DisplayArks() {
             ) : (
             <h3>No Results to Display</h3>
             )}
-        </Col>
-    )
+        <a href='https://pngtree.com/free-backgrounds'>free background photos from pngtree.com</a>
+        </div>
+    );
 }
 
-export default DisplayArks;
+export default Landing;

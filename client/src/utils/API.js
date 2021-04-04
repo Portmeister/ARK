@@ -15,6 +15,7 @@ export default {
   },
   // Saves a book to the database
   saveArk: function(arkData) {
+    console.log("hello");
     return axios.post("/api/arks", arkData);
   }
 };
