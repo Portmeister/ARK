@@ -9,6 +9,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,20 +51,16 @@ function Nav() {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  <MenuItem onClick={handleClose} href="/arks">Submit ARK</MenuItem>
-                  <MenuItem onClick={handleClose} href="/About">About Us</MenuItem>
-                  <MenuItem onClick={handleClose} href="/provider">Login</MenuItem>
+                  <MenuItem component="a" href="/" onClick={handleClose}>Home</MenuItem>
+                  <MenuItem component="a" href="/arks" onClick={handleClose}>Submit ARK</MenuItem>
+                  <MenuItem component="a" href="/About" onClick={handleClose}>About Us</MenuItem>
+                  <MenuItem component="a" href="/provider" onClick={handleClose}>Login</MenuItem>
                 </Menu>
               </div>
             </IconButton>
             <Typography variant="h4" className={classes.title}>
               <a className="navbar-brand" href="/">
                 ARK
-              </a>
-            </Typography>
-            <Typography variant="h4" className={classes.title}>
-              <a className="navbar-brand" href="/About">
-                About
               </a>
             </Typography>
             <Button color="inherit" href="/provider">Login</Button>
