@@ -11,6 +11,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 import Link from "@material-ui/core/Link";
 import { NavLink } from "react-router-dom";
+import { Button } from '@material-ui/core';
 
 document.body.style = "background: lightgray;";
 
@@ -114,20 +115,19 @@ export default function Home() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                <NavLink to="/arks">
-                    <motion.div
-                      className="animatable"
+                <NavLink to="/form">
+                <motion.button
                       whileHover={{
-                        textColor: "white",
+                        backgroundColor: "#87CFEB",
+                        color: "blue",
                         scale: 2.2,
                         textShadow: "0px 0px 8px #87CFEB",
                         boxShadow: "0px 0px 8px #87CFEB",
+                        borderRadius: "40%",
                       }}
                     >
-                      <Button variant="outlined" color="primary">
-                        Submit ARK
-                      </Button>
-                    </motion.div>
+                      Submit ARK
+                    </motion.button>
                   </NavLink>
                   <NavLink to="/arkview">
                     <motion.button
