@@ -49,7 +49,6 @@ function ArkView() {
             ) : (
             <h3>No Results to Display</h3>
             )}
-        <a href='https://pngtree.com/free-backgrounds'>free background photos from pngtree.com</a>
         </div>
     );
 }
