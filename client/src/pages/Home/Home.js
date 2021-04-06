@@ -5,6 +5,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Grid from "@material-ui/core/Grid";
 import { motion } from "framer-motion";
+import { Button } from '@material-ui/core';
 import "fontsource-roboto";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
@@ -129,20 +130,22 @@ export default function Home() {
                       Submit ARK
                     </motion.button>
                   </NavLink>
-                  <NavLink to="/arkview">
-                    <motion.button
+                <NavLink to="/arkview">
+                    <motion.div
+                      className="animatable"
                       whileHover={{
-                        backgroundColor: "#87CFEB",
-                        color: "blue",
+                        textColor: "white",
                         scale: 2.2,
                         textShadow: "0px 0px 8px #87CFEB",
                         boxShadow: "0px 0px 8px #87CFEB",
-                        borderRadius: "40%",
                       }}
                     >
-                      View ARKs
-                    </motion.button>
+                      <Button variant="outlined" color="primary">
+                        View  ARK
+                      </Button>
+                    </motion.div>
                   </NavLink>
+                
                 </Grid>
               </Grid>
             </div>
