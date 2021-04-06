@@ -6,7 +6,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import { Link } from "react-router-dom";
 import { List, ListItem } from "../../components/List";
 
-function Landing() {
+function ArkView() {
 
     const [arks, setArks] = useState([])
     
@@ -54,4 +54,4 @@ function Landing() {
     );
 }
 
-export default Landing;
+export default ArkView;

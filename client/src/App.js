@@ -1,9 +1,9 @@
 import React from "react";
-import About from "./pages/AboutUs/AboutUs";
-import Arks from "./pages/Form/Form";
+import Home from "./pages/Home/Home";
+import Form from "./pages/Form/Form";
 import Detail from "./pages/ArkCard/ArkCard";
 import NoMatch from "./pages/NoMatch/NoMatch";
-import Landing from "./pages/Landing/Landing"
+import ArkView from "./pages/ArkView/ArkView"
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
@@ -49,13 +49,13 @@ function App() {
             <Nav />
             <Switch>
             <Route exact path="/">
-            <Landing />
+            <Home />
             </Route>
-            <Route exact path="/About">
-            <About />
+            <Route exact path="/arkview">
+            <ArkView />
             </Route>
-            <Route exact path="/arks">
-            <Arks />
+            <Route exact path="/form">
+            <Form />
             </Route>
             <Route exact path="/arks/:id">
               <Detail />
@@ -71,6 +71,7 @@ function App() {
           </div>
         </Router>
     </ThemeProvider>
+    <a href='https://pngtree.com/free-backgrounds'>free background photos from pngtree.com</a>
     </div>
   );
 }

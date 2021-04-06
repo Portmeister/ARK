@@ -4,7 +4,7 @@ import API from "../../utils/API";
 import { Col, Row, Container } from "../../components/Grid";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 
-function Arks() {
+function Form() {
   const [formObject, setFormObject] = useState({})
 
   function handleInputChange(event) {
@@ -76,4 +76,4 @@ function Arks() {
   }
 
 
-export default Arks;
+export default Form;

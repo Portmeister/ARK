@@ -66,10 +66,10 @@ function Nav() {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  <MenuItem onClick={handleClose} href="/arks">List an ARK</MenuItem>
-                  <MenuItem onClick={handleClose} href="/provider">Find an ARK</MenuItem>
-                  <MenuItem onClick={handleClose} href="/About">About Us</MenuItem>
-                  <MenuItem onClick={handleClose} href="/provider">Login</MenuItem>
+                  <MenuItem component="a" href="/" onClick={handleClose}>Home</MenuItem>
+                  <MenuItem component="a" href="/form" onClick={handleClose}>Submit ARK</MenuItem>
+                  <MenuItem component="a" href="/arkview" onClick={handleClose}>View ARKs</MenuItem>
+                  <MenuItem component="a" href="/provider" onClick={handleClose}>Login</MenuItem>
                 </Menu>
               </div>
             </IconButton>
