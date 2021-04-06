@@ -89,8 +89,8 @@ export default function Home() {
         </Container>
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-            <motion.div
-              initial={{ x: "34%", y: -400 }}
+          <motion.div
+              initial={{ x: "28%", y: -400 }}
               animate={{ y: -10 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
               component="h1"
@@ -114,19 +114,20 @@ export default function Home() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <NavLink to="/form">
-                    <motion.button
+                <NavLink to="/arks">
+                    <motion.div
+                      className="animatable"
                       whileHover={{
-                        backgroundColor: "#87CFEB",
-                        color: "blue",
+                        textColor: "white",
                         scale: 2.2,
                         textShadow: "0px 0px 8px #87CFEB",
                         boxShadow: "0px 0px 8px #87CFEB",
-                        borderRadius: "40%",
                       }}
                     >
-                      Submit ARK
-                    </motion.button>
+                      <Button variant="outlined" color="primary">
+                        Submit ARK
+                      </Button>
+                    </motion.div>
                   </NavLink>
                   <NavLink to="/arkview">
                     <motion.button
