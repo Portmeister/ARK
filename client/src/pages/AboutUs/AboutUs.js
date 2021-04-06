@@ -4,6 +4,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Grid from "@material-ui/core/Grid";
+import { Button } from '@material-ui/core';
 import { motion } from "framer-motion";
 import "fontsource-roboto";
 import Typography from "@material-ui/core/Typography";
@@ -89,8 +90,8 @@ export default function About() {
         </Container>
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
-            <motion.div
-              initial={{ x: "34%", y: -400 }}
+          <motion.div
+              initial={{ x: "28%", y: -400 }}
               animate={{ y: -10 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 120 }}
               component="h1"
@@ -114,19 +115,20 @@ export default function About() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <NavLink to="/arks">
-                    <motion.button
+                <NavLink to="/arks">
+                    <motion.div
+                      className="animatable"
                       whileHover={{
-                        backgroundColor: "#87CFEB",
-                        color: "blue",
+                        textColor: "white",
                         scale: 2.2,
                         textShadow: "0px 0px 8px #87CFEB",
                         boxShadow: "0px 0px 8px #87CFEB",
-                        borderRadius: "40%",
                       }}
                     >
-                      Enter
-                    </motion.button>
+                      <Button variant="outlined" color="primary">
+                        Enter
+                      </Button>
+                    </motion.div>
                   </NavLink>
                 </Grid>
               </Grid>
