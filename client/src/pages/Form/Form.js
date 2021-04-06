@@ -23,7 +23,7 @@ function Form() {
         userEmail: formObject.userEmail,
         userLocation: formObject.userLocation,
         serviceSynopsis: formObject.serviceSynopsis,
-      })
+      }).then(res => {window.location = "/arkview"})
         .catch(err => console.log(err));
     }
   };
