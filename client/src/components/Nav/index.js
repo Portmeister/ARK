@@ -52,8 +52,8 @@ function Nav() {
                   onClose={handleClose}
                 >
                   <MenuItem component="a" href="/" onClick={handleClose}>Home</MenuItem>
-                  <MenuItem component="a" href="/arks" onClick={handleClose}>Submit ARK</MenuItem>
-                  <MenuItem component="a" href="/About" onClick={handleClose}>About Us</MenuItem>
+                  <MenuItem component="a" href="/form" onClick={handleClose}>Submit ARK</MenuItem>
+                  <MenuItem component="a" href="/arkview" onClick={handleClose}>View ARKs</MenuItem>
                   <MenuItem component="a" href="/provider" onClick={handleClose}>Login</MenuItem>
                 </Menu>
               </div>
