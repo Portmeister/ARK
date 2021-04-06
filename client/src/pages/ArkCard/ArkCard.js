@@ -42,12 +42,11 @@ function Detail() {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link style={{fontSize: 20}} to="/arks">← Back to ARKs</Link>
+            <Link style={{fontSize: 20}} to="/arkview">← Back to ARKs</Link>
           </Col>
         </Row>
       </Container>
     );
   }
-
 
 export default Detail;
