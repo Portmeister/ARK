@@ -9,7 +9,9 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import Link from '@material-ui/core/Link';
+
+const font = "Architects Daughter, sans-serif";
+const aboutFont = "Open Sans, sans-serif";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -18,9 +20,22 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
-  title: {
+  about: {
     flexGrow: 1,
+    marginLeft: 400,
+    fontSize: 25,
+    fontFamily: aboutFont,
   },
+  logoFont: { 
+    fontFamily: font,
+    fontSize: 30,
+    marginLeft: 20,
+    marginTop: 10,
+    marginRight: 650,
+  },
+  login: {
+    fontSize: 20,
+  }
 }));
 
 function Nav() {
@@ -51,19 +66,22 @@ function Nav() {
                   open={Boolean(anchorEl)}
                   onClose={handleClose}
                 >
-                  <MenuItem component="a" href="/" onClick={handleClose}>Home</MenuItem>
-                  <MenuItem component="a" href="/arks" onClick={handleClose}>Submit ARK</MenuItem>
-                  <MenuItem component="a" href="/About" onClick={handleClose}>About Us</MenuItem>
-                  <MenuItem component="a" href="/provider" onClick={handleClose}>Login</MenuItem>
+                  <MenuItem onClick={handleClose} href="/arks">List an ARK</MenuItem>
+                  <MenuItem onClick={handleClose} href="/provider">Find an ARK</MenuItem>
+                  <MenuItem onClick={handleClose} href="/About">About Us</MenuItem>
+                  <MenuItem onClick={handleClose} href="/provider">Login</MenuItem>
                 </Menu>
               </div>
             </IconButton>
-            <Typography variant="h4" className={classes.title}>
-              <a className="navbar-brand" href="/">
-                ARK
+            <img src="/assets/logo2.png" alt="logo" className="logo" href="/"/>
+    
+            <Typography variant="h4" className={classes.logoFont}>
+              <a className="ark-name" href="/">
+                Acts of Random Kindness
               </a>
             </Typography>
-            <Button color="inherit" href="/provider">Login</Button>
+            <Button color="inherit" href="/provider" id="login" className={classes.login}>SIGN UP</Button>
+            <Button color="inherit" href="/provider" id="login" className={classes.login}>LOGIN</Button>
           </Toolbar>
         </AppBar>
       </div>
@@ -71,3 +89,4 @@ function Nav() {
 }
 
 export default Nav;
+
